@@ -1,12 +1,5 @@
-# Github release proxy
+# Github Download Proxy
 
-方便国内下载GitHub release
+***fork from [XGFan/ghproxy](https://github.com/XGFan/ghproxy)***
 
-
-
-https://github.com/XGFan/ghproxy/releases/download/v0.1/ghproxy
-
-->
-
-http://github.test4x.com:1323/XGFan/ghproxy/releases/download/v0.1/ghproxy
-
+This is base framework of fastgit download booster ***(RELASE & CODELOAD INCLUDED)***.
