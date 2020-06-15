@@ -19,5 +19,6 @@ func proxy(c echo.Context) error {
 	resp, _ := http.DefaultClient.Get(realDownloadUrl)
 	defer resp.Body.Close()
 	c.Response().Header().Add("Content-Disposition", resp.Header.Get("Content-Disposition"))
+	c.Response().Header().Add("Content-Length", resp.Header.Get("Content-Length"))
 	return c.Stream(200, resp.Header.Get("Content-Type"), resp.Body)
 }
