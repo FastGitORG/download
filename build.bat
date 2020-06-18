@@ -1,3 +1,4 @@
+@echo off
 echo ===========================
 echo = Go Cross Compile Helper =
 echo = by KevinZonda           =
@@ -12,5 +13,5 @@ SET GOARCH=amd64
 echo [+] Start build
 call go build ghproxy.go
 
-echo [+] Enter any key to exit.
+echo [+] Finished.
 pause
