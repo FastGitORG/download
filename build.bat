@@ -11,7 +11,7 @@ SET GOOS=linux
 SET GOARCH=amd64
 
 echo [+] Start build
-call go build ghproxy.go
+call go build -ldflags="-s -w" ghproxy.go
 
 echo [+] Finished.
 pause
