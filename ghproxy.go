@@ -20,5 +20,6 @@ func proxy(c echo.Context) error {
 	defer resp.Body.Close()
 	c.Response().Header().Add("Content-Disposition", resp.Header.Get("Content-Disposition"))
 	c.Response().Header().Add("Content-Length", resp.Header.Get("Content-Length"))
+	c.Response().Header().Add("Accept-Ranges", resp.Header.Get("Accept-Ranges"))
 	return c.Stream(200, resp.Header.Get("Content-Type"), resp.Body)
 }
